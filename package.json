@@ -1,0 +1,14 @@
+{
+  "name": "studio-sync",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Studio Sync - Photography Proxy Sync & Local Master Auto-Sorting",
+  "scripts": {
+    "build": "cd client && npm install && npm run build && cd ../server && npm install",
+    "start": "node server/src/index.js",
+    "build:client": "cd client && npm run build",
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm run dev",
+    "test:e2e": "node scripts/test_setup.js"
+  }
+}
